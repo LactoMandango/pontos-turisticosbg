@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Tilt+Neon&display=swap');
+
+:root {
+    --cor-primaria: #e6cdec;
+    --cor-secundaria: #ffffff;
+    --cor-terciaria: #6b06af;
+    --cor-quaternaria: rgb(0, 0, 0);
+
+    --fonte-primaria: 'Josefin Sans', sans-serif;
+    --fonte-secundaria: 'Tilt Neon', cursive;
+}
+
+
+.cabecalho__menu {
+    display: flex;
+    padding: 1em;
+    gap: 20px;
+    background-color: var(--cor-terciaria);
+}
+
+.cabecalho__menu__link {
+    font-family: var(--fonte-primaria);
+    font-size: 1.5rem;    
+    font-weight: 600;
+    color: var(--cor-quaternaria);
+    text-decoration: none;
+}
+
+.titulo {
+    font-family: var(--fonte-primaria);
+    font-size: 24px;
+    font-weight: 700;
+}
+
+body {
+    background-color: var(--cor-primaria);
+    font-family: var(--fonte-primaria);
+    margin: 0;
+    padding: 0;
+}
+
+main {
+  padding: 20px;
+}
+
+.card {
+    font-size: 20px;
+    font-weight: 500;
+  display: inline-block;
+  width: 300px;
+  border: 2px solid #690383;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  background-color: var(--cor-secundaria);
+}
+
+.card img {
+    padding: 0.5em 0 0.5em;
+  width: 100%;
+  border-radius: 5px;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* media query header para desktop */
+
+@media (max-width: 1200px) {
+    .card {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 300px;
+      margin: 10px;
+    }
+
+}
+
+
