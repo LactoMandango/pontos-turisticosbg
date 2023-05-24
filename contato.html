@@ -18,61 +18,97 @@
         </nav>
     </header>    
   <main>
-    <h1 class="titulo">Contatos Úteis</h1>
+    <section class="titulo">
+      <h1 class="titulo__contato">Contatos Úteis</h1>
+    </section> 
 
-    <div class="card" onclick="mostrarInformacoes('Corpo de Bombeiros', 'Endereço: Av. Osvaldo Aranha, 359 - Juventude, Bento Gonçalves-RS')">
-      <h2>Corpo de Bombeiros</h2>
-      <img src="imagens/bombeiros.png" alt="Corpo de Bombeiros">
-      <p>Telefone: 193</p>
-    </div>
-
-    <div class="card" onclick="mostrarInformacoes('Brigada Militar', 'Endereço: Rua Teotônio Vilella, n° 262, COHAB, Bento Gonçalves-RS')">
-      <h2>Brigada Militar</h2>
-      <img src="imagens/brigada militar.jpg" alt="Brigada Militar">
-      <p>Telefone: 190</p>
-    </div>
-
-    <div class="card" onclick="mostrarInformacoes('SAMU', 'Endereço: Bento Gonçalves-RS')">
-        <h2>SAMU</h2>
-        <img src="imagens/samu.jpg" alt="SAMU">
-        <p>Telefone: 192</p>
+    <section class="cards">
+      <div class="card">
+        <h2>Corpo de Bombeiros</h2>
+        <img src="imagens/bombeiros.png" alt="Corpo de Bombeiros">
+        <p>Telefone: 193</p>
+        <div class="card-info">
+          <p><strong>Endereço:</strong><br> Av. Osvaldo Aranha, 359 - Juventude. <br><br> <strong>Horário de Atendimento:</strong><br> Atendimento 24h.</p>
+        </div>
       </div>
 
-    <div class="card" onclick="mostrarInformacoes('Centro de Atendimento ao Turista', 'Endereço: Travessa Carazinho, Cidade Alta, Bento Gonçalves-RS (Junto da Pipa Pórtico) / Horário de Funcionamento: Seg a sexta: 8h até 17h / Sab, Dom e feriados: 9h até 15h30')">
-      <h2>Centro de Atendimento ao Turista</h2>
-      <img src="imagens/turista.jpg" alt="Centro de Atendimento ao Turista">
-      <p>Telefone: (54) 3055-7202</p>
-    </div>
-
-    <div class="card" onclick="mostrarInformacoes('CRAS', 'Endereço: CRAS I: Rua Calisto Orestes Sganzerla, 70 - Ouro Verde. CRAS II: Rua Luís Girardini, 10 - Juventude da Enologia. CRAS III: Rua Carlos Dreher Neto, 532-644 - Vila Nova.  Horário de Funcionamento: Seg a sexta: 8h às 17h')">
-        <h2>CRAS</h2>
-        <img src="imagens/cras.png" alt="CRAS">
-        <p>Telefone: (54) 3771-4240/ (54) 3055-7013/ (54) 3771-4220</p>
+      <div class="card">
+        <h2>Brigada Militar</h2>
+        <img src="imagens/brigada militar.jpg" alt="Brigada Militar">
+        <p>Telefone: 190</p>
+        <div class="card-info">
+          <p><strong>Endereço:</strong><br> Rua Teotônio Vilella, n° 262 - COHAB. <br><br> <strong>Horário de Atendimento:</strong><br> Atendimento 24h.</p>
+        </div>
       </div>
 
-      <div class="card" onclick="mostrarInformacoes('CREAS', 'Endereço: Rua Caetano da Rolt, 434 - Universitário, Bento Gonçalves - RS / Horário de Funcionamento: Seg a sexta: 8h às 17h45min')">
-        <h2>CREAS</h2>
-        <img src="imagens/creas.jpg" alt="CREAS">
-        <p>Telefone: (54) 3055-7357</p>
+      <div class="card">
+          <h2>SAMU</h2>
+          <img src="imagens/samu.jpg" alt="SAMU">
+          <p>Telefone: 192</p>
+          <div class="card-info">
+            <p><strong>Endereço:</strong><br>Bento Gonçalves-RS. <br><br> <strong>Horário de Atendimento:</strong><br> Atendimento 24h.</p>
+          </div>
+        </div>
+
+      <div class="card">
+        <h2>Centro de Atendimento ao Turista</h2>
+        <img src="imagens/turista.jpg" alt="Centro de Atendimento ao Turista">
+        <p>Telefone: (54) 3055-7202</p>
+        <div class="card-info">
+          <p><strong>Endereço:</strong><br> Travessa Carazinho, s/n - Cidade Alta. (Junto da Pipa Pórtico). <br><br> <strong> Horário de Funcionamento:</strong> Seg a sexta: 8h até 17h / Sab, Dom e feriados: 9h até 15h30.</p>
+        </div>
       </div>
 
-      <div class="card" onclick="mostrarInformacoes('REVIVI', 'Endereço: Rua 10 de Novembro, 190 - Cidade Alta, Bento Gonçalves - RS / Horário de Funcionamento: Seg a sexta: 8h às 17h30min')">
-        <h2>REVIVI</h2>
-        <img src="imagens/Revivi.jpg" alt="REVIVI">
-        <p>Telefone: (54) 3454-5400</p>
-      </div>
+      <div class="card">
+          <h2>CRAS</h2>
+          <img src="imagens/cras.png" alt="CRAS">
+          <p>Telefone: (54) 3771-4240/ (54) 3055-7013/ (54) 3771-4220</p>
+          <div class="card-info">
+            <p><strong>Endereço:</strong><br> CRAS I: Rua Calisto Orestes Sganzerla, 70 - Ouro Verde. <br> CRAS II: Rua Luís Girardini, 10 - Juventude da Enologia. <br> CRAS III: Rua Carlos Dreher Neto, 532-644 - Vila Nova. <br><br> <strong>Horário de Funcionamento:</strong><br> Seg a sexta: 8h às 17h.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2>CREAS</h2>
+          <img src="imagens/creas.jpg" alt="CREAS">
+          <p>Telefone: (54) 3055-7357</p>
+          <div class="card-info">
+            <p><strong>Endereço:</strong> Rua Caetano da Rolt, 434 - Universitário. <br><br> <strong>Horário de Funcionamento:</strong><br> Seg a sexta: 8h às 17h45min.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2>REVIVI</h2>
+          <img src="imagens/Revivi.jpg" alt="REVIVI">
+          <p>Telefone: (54) 3454-5400</p>
+          <div class="card-info">
+            <p><strong>Endereço:</strong><br> Rua 10 de Novembro, 190 - Cidade Alta. <br><br> <strong>Horário de Funcionamento:</strong><br> Seg a sexta: 8h às 17h30min.</p>
+          </div>
+        </div>
+      </section>
 
   </main>
 
   <script>
+    const cards = document.querySelectorAll('.card');
+
+      cards.forEach(card => {
+      card.addEventListener('click', () => {
+      const cardInfo = card.querySelector('.card-info');
+      cardInfo.style.display = cardInfo.style.display === 'block' ? 'none' : 'block';
+    });
+  });
+ </script>
+
+
+<!--
+  <script>
     function mostrarInformacoes(nome, informacoes) {
       alert(nome + "\n\n" + informacoes);
     }
-  </script>
+  </script> -->
+
+
 </body>
-
 </html>
-
     
-</body>
-</html>

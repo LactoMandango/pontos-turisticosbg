@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Tilt+Neon&display=swap');
 
 :root {
-    --cor-primaria: #e6cdec;
+    --cor-primaria: #489bdf;
     --cor-secundaria: #ffffff;
-    --cor-terciaria: #6b06af;
+    --cor-terciaria: #6e090e;
     --cor-quaternaria: rgb(0, 0, 0);
+    --cor-quintenaria: #E39D12;
 
     --fonte-primaria: 'Josefin Sans', sans-serif;
     --fonte-secundaria: 'Tilt Neon', cursive;
@@ -23,7 +24,8 @@
     font-size: 1.5rem;    
     font-weight: 600;
     color: var(--cor-quaternaria);
-    text-decoration: none;
+    text-decoration: underline;
+    
 }
 
 .titulo {
@@ -32,10 +34,16 @@
     font-weight: 700;
 }
 
+/*html {
+  height: 100%;
+}*/
+
 body {
-    background-color: var(--cor-primaria);
-    font-family: var(--fonte-primaria);
+    min-height: 100vh;
     margin: 0;
+    background: linear-gradient(to bottom, var(--cor-primaria), var(--cor-secundaria));
+    font-family: var(--fonte-primaria);
+    /*height: 100%;*/
     padding: 0;
 }
 
@@ -44,8 +52,8 @@ main {
 }
 
 .card {
-    font-size: 20px;
-    font-weight: 500;
+  font-size: 20px;
+  font-weight: 500;
   display: inline-block;
   width: 300px;
   border: 2px solid #690383;
@@ -56,26 +64,74 @@ main {
   background-color: var(--cor-secundaria);
 }
 
+.card-info {
+  padding: 1em;
+  display: none;
+  border: 1px solid var(--cor-quaternaria);
+  background-color: var(--cor-primaria);
+  text-align: justify;
+}
+
+strong {
+  font-weight: 700;
+}
+
 .card img {
     padding: 0.5em 0 0.5em;
   width: 100%;
-  border-radius: 5px;
+  border-radius: 25px;
   height: 200px;
   object-fit: cover;
 }
 
 /* media query header para desktop */
 
-@media (max-width: 1200px) {
+@media (min-width: 768px) {
+
+
+    .titulo {
+      width: 100%;
+      font-size: 30px;
+      text-decoration: underline;
+    }
+
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+
     .card {
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      width: 300px;
-      margin: 10px;
+      gap: 1.5rem;
+      width: 30em;
+      margin: 1.5em;
+      transition: transform 0.3s ease
+    }
+    
+    h2 {
+      font-size: 30px;
+      font-weight: 600;
     }
 
+    .card-info {
+      width: 90%;
+    }
+
+
+    .card:hover {
+      transform: scale(1.1); /* Aumenta o tamanho em 10% */
+      background-color: var(--cor-quintenaria); /* Nova cor de fundo */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra */
+    }
+    
 }
+
+
 
 

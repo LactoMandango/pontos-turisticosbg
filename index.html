@@ -18,69 +18,111 @@
         </nav>
     </header>    
   <main>
-    <h1 class="titulo">Principais Pontos Turísticos</h1>
-
-    <div class="card" onclick="mostrarInformacoes('Caminhos de Pedra', 'Endereço: Estrada Barracão, nº 600 – Distrito de São Pedro (próximo ao posto de combustível) / Horário de Funcionamento: Sab, Dom e feriados: 9h30 até 15h30 | Seg a sexta: 8h até 12h e 13h até 17h (Informações referentes ao CAT Caminhos de Pedra)')">
-      <h2>Caminhos de Pedra</h2>
-      <img src="imagens/caminhos-de-pedra.jpg" alt="Caminhos de Pedra">
-      <p>Telefone: (54) 3455-6333</p>
-    </div>
-
-    <div class="card" onclick="mostrarInformacoes('Vinícola Casa Valduga', 'Endereço: Via Tentro, nº 2355 / Horário de Funcionamento: Segunda a sábado: 9h15min às 18h | Domingo e feriados: 9h15min às 17h')">
-      <h2>Vinícola Casa Valduga</h2>
-      <img src="imagens/casa.valduga.jpg" alt="Vinícola Casa Valduga">
-      <p>Telefone: (54) 2105-3154</p>
-    </div>
-
-    <div class="card" onclick="mostrarInformacoes('Parque Temático Epopeia Italiana', 'Endereço: Rua Visc. de São Gabriel, 507 - Cidade Alta, Bento Gonçalves - RS / Horário de Funcionamento: Janeiro a junho: Seg, ter e qui, das 9h às 16h. Julho a dezembro: Seg a Dom, das 07h45 às 18h')">
-      <h2>Epopeia Italiana</h2>
-      <img src="imagens/epopeia.jpg" alt="Parque Temático Epopeia Italiana">
-      <p>Telefone: (54) 3455-2788</p>
-    </div>
-
-    <div class="card" onclick="mostrarInformacoes('Parque de Aventuras Gasper', 'Endereço: Linha Eulália Alta, Bento Gonçalves - RS / Horário de Funcionamento: Quarta a Domingo, das 9h às 18h')">
-        <h2>Parque de Aventuras Gasper</h2>
-        <img src="imagens/gasper.jpg" alt="Parque de Aventuras Gasper">
-        <p>Telefone: (54) 99109-4824</p>
+    <section class="titulo">
+      <h1 class="titulo__pontos">Principais Pontos Turísticos</h1>
+    </section>
+    <section class="cards">
+      <div class="card">
+        <h2>Caminhos de Pedra</h2>
+        <img src="imagens/caminhos-de-pedra.jpg" alt="Caminhos de Pedra">
+        <p>Telefone: (54) 3455-6333</p>
+        <div class="card-info">
+          <p><strong>Endereço:</strong><br> Estrada Barracão, nº 600 – Distrito de São Pedro (próximo ao posto de combustível). <br><br> <strong>Horário de Funcionamento:</strong><br> Sab, Dom e feriados: 9h30 até 15h30 | Seg a sexta: 8h até 12h e 13h até 17h. (Informações referentes ao CAT Caminhos de Pedra)</p>
+        </div>
       </div>
 
-      <div class="card" onclick="mostrarInformacoes('La Fontana e Via del Vino', 'Endereço: Rua Mal. Deodoro, s/n - Centro, Bento Gonçalves -RS / Horário de Funcionamento: Aberto 24 horas')">
-        <h2>La Fontana e Via del Vino</h2>
-        <img src="imagens/la-fontana.jpg" alt="La Fontana e Via del Vino">
-        <p>Telefone: (54) 3771-4238</p>
+      <div class="card">
+        <h2>Vinícola Casa Valduga</h2>
+        <img src="imagens/casa.valduga.jpg" alt="Vinícola Casa Valduga">
+        <p>Telefone: (54) 2105-3154</p>
+        <div class="card-info">
+          <p><strong>Endereço:</strong><br> Via Tentro, nº 2355. <br><br> <strong>Horário de Funcionamento:</strong> <br> Segunda a sábado: 9h15min às 18h | Domingo e feriados: 9h15min às 17h.</p>
+        </div>
       </div>
 
-      <div class="card" onclick="mostrarInformacoes('Maria Fumaça', 'Endereço: R. Duque de Caxias, s/n - Cidade Alta, Bento Gonçalves - RS / Horário de Funcionamento: Passeio de Trem: 9h e 14h')">
-        <h2>Maria Fumaça</h2>
-        <img src="imagens/maria-fumaca.jpg" alt="Maria Fumaça">
+      <div class="card">
+        <h2>Epopeia Italiana</h2>
+        <img src="imagens/epopeia.jpg" alt="Parque Temático Epopeia Italiana">
         <p>Telefone: (54) 3455-2788</p>
+        <div class="card-info">
+          <p><strong>Endereço:</strong><br> Rua Visc. de São Gabriel, 507 - Cidade Alta. <br><br> <strong>Horário de Funcionamento:</strong> <br> Janeiro a junho: Seg, ter e qui, das 9h às 16h. Julho a dezembro: Seg a Dom, das 07h45 às 18h.</p>
+        </div>
       </div>
 
-      <div class="card" onclick="mostrarInformacoes('Museu do Imigrante', 'Endereço: Rua Herny Hugo Dreher, 127 - Planalto, Bento Gonçalves - RS / Horário de Funcionamento: Terça à Sexta 8h às 17h. Sábado 8h às 12h / 13h às 17h ')">
-        <h2>Museu do Imigrante</h2>
-        <img src="imagens/museu-imigrante.jpg" alt="Museu do Imigrante">
-        <p>Telefone: (54) 3771-4230</p>
-      </div>
+      <div class="card">
+          <h2>Parque de Aventuras Gasper</h2>
+          <img src="imagens/gasper.jpg" alt="Parque de Aventuras Gasper">
+          <p>Telefone: (54) 99109-4824</p>
+          <div class="card-info">
+            <p><strong>Endereço:</strong> <br> Linha Eulália Alta. <br><br> <strong> Horário de Funcionamento:</strong> <br> Quarta a Domingo, das 9h às 18h.</p>
+          </div>
+        </div>
 
-      <div class="card" onclick="mostrarInformacoes('Pipa Pórtico', 'Endereço: Travessa Carazinho, Cidade Alta, Bento Gonçalves-RS / Horário de Funcionamento: Aberto 24 horas')">
-        <h2>Pipa Pórtico</h2>
-        <img src="imagens/pipa-portico.jpg" alt="Pipa Pórtico">
-        <p>Telefone: (54) 3055-7202</p>
-      </div>
+        <div class="card">
+          <h2>La Fontana e Via del Vino</h2>
+          <img src="imagens/la-fontana.jpg" alt="La Fontana e Via del Vino">
+          <p>Telefone: (54) 3771-4238</p>
+          <div class="card-info">
+            <p><strong>Endereço:</strong><br> Rua Mal. Deodoro, s/n - Centro. <br><br> <strong>Horário de Funcionamento:</strong> <br> Aberto 24 horas.</p>
+          </div>
+        </div>
 
-      <div class="card" onclick="mostrarInformacoes('Vale dos Vinhedos', 'Endereço: Rua Dávila Sandrin, s/nº – Estrada do Vinho (junto à sede da Associação do Vale dos Vinhedos – Aprovale) / Horário de Funcionamento: Segunda a sexta: das 9h às 12h e das 13h às 17h. Fechado aos finais de semana. Abre em feriados prolongados, das 10h às 12h30min e das 13h30min às 16h. (Informações referentes ao CAT Vale dos Vinhedos)')">
-        <h2>Vale dos Vinhedos</h2>
-        <img src="imagens/vale-dos-vinhedos.jpg" alt="Vale dos Vinhedos">
-        <p>Telefone: (54) 3451-9601</p>
-      </div>
+        <div class="card">
+          <h2>Maria Fumaça</h2>
+          <img src="imagens/maria-fumaca.jpg" alt="Maria Fumaça">
+          <p>Telefone: (54) 3455-2788</p>
+          <div class="card-info">
+            <p><strong>Endereço:</strong> <br> R. Duque de Caxias, s/n - Cidade Alta. <br><br> <strong> Horário de Funcionamento:</strong> <br> Passeio de Trem: 9h e 14h</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2>Museu do Imigrante</h2>
+          <img src="imagens/museu-imigrante.jpg" alt="Museu do Imigrante">
+          <p>Telefone: (54) 3771-4230</p>
+          <div class="card-info">
+            <p><strong>Endereço:</strong><br> Rua Herny Hugo Dreher, 127 - Planalto. <br><br> <strong>Horário de Funcionamento:</strong> <br> Terça à Sexta 8h às 17h. Sábado 8h às 12h / 13h às 17h. </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2>Pipa Pórtico</h2>
+          <img src="imagens/pipa-portico.jpg" alt="Pipa Pórtico">
+          <p>Telefone: (54) 3055-7202</p>
+          <div class="card-info">
+            <p><strong>Endereço:</strong> <br> Travessa Carazinho, s/n - Cidade Alta. <br><br> <strong>Horário de Funcionamento:</strong> <br> Aberto 24 horas.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2>Vale dos Vinhedos</h2>
+          <img src="imagens/vale-dos-vinhedos.jpg" alt="Vale dos Vinhedos">
+          <p>Telefone: (54) 3451-9601</p>
+          <div class="card-info">
+            <p><strong>Endereço:</strong> <br> Rua Dávila Sandrin, s/nº – Estrada do Vinho (junto à sede da Associação do Vale dos Vinhedos – Aprovale). <br><br> <strong>Horário de Funcionamento:</strong> <br> Segunda a sexta: das 9h às 12h e das 13h às 17h. Fechado aos finais de semana. Abre em feriados prolongados, das 10h às 12h30min e das 13h30min às 16h. (Informações referentes ao CAT Vale dos Vinhedos).</p>
+          </div>
+        </div>
+    </section>
 
   </main>
 
   <script>
+    const cards = document.querySelectorAll('.card');
+
+      cards.forEach(card => {
+      card.addEventListener('click', () => {
+      const cardInfo = card.querySelector('.card-info');
+      cardInfo.style.display = cardInfo.style.display === 'block' ? 'none' : 'block';
+    });
+  });
+ </script>
+
+<!--
+  <script>
     function mostrarInformacoes(nome, informacoes) {
       alert(nome + "\n\n" + informacoes);
     }
-  </script>
+  </script> -->
 </body>
 
 </html>
